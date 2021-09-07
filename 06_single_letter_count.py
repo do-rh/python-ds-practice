@@ -10,3 +10,8 @@ def single_letter_count(word, letter):
         >>> single_letter_count("Hello World", 'l')
         3
     """
+    counter = 0
+    for ltr in word:
+        if ltr == letter or ltr == letter.swapcase():
+            counter = counter + 1
+    return counter
