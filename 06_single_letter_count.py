@@ -12,6 +12,8 @@ def single_letter_count(word, letter):
     """
     counter = 0
     for ltr in word:
-        if ltr == letter or ltr == letter.swapcase():
+        if ltr == letter or ltr == letter.lower():
             counter = counter + 1
     return counter
+
+    #word.count()

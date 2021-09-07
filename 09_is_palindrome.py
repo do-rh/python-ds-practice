@@ -23,10 +23,13 @@ def is_palindrome(phrase):
     """
     lst_phrase = []
     for ltr in phrase:
-        if ltr != " ":
+        if ltr != " ": #.replace()
             lst_phrase.append(ltr.lower())
     rev_phrase = lst_phrase.copy()
     rev_phrase.reverse()
     if rev_phrase == lst_phrase: 
         return True
     return False
+
+    #slice(::-1).
+    #

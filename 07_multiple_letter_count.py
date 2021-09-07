@@ -14,3 +14,12 @@ def multiple_letter_count(phrase):
         else:
             counter[ltr] = counter[ltr] + 1
     return counter
+
+    #look at soln
+       counter = {}
+    for ltr in phrase:
+        if counter.get(ltr, 0) is None:
+            counter[ltr] = 1
+        else:
+            counter[ltr] = counter[ltr] + 1
+    return counter
